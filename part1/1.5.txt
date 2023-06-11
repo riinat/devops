@@ -1,0 +1,5 @@
+docker pull devopsdockeruh/simple-web-service:ubuntu
+docker images
+docker run -d --name test devopsdockeruh/simple-web-service:ubuntu
+docker exec -it test sh
+tail -f ./text.log
