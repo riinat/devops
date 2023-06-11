@@ -1,5 +1,5 @@
-docker pull devopsdockeruh/simple-web-service:ubuntu
+docker pull devopsdockeruh/simple-web-service:alpine
 docker images
-docker run -d --name test devopsdockeruh/simple-web-service:ubuntu
+docker run -d --name test devopsdockeruh/simple-web-service:alpine
 docker exec -it test sh
 tail -f ./text.log
